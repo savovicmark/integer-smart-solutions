@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="font-weight-bold mb-3" ><strong>About us</strong></h2>
+                    <p>Integer Smart Solution offers broad spectrum of products and
+                        services in the field of construction, engineering and real
+                        estates including but not limited to design, construction and
+                        maintenance of all electrical systems, high and low voltage,
+                        smart home systems, yacht services, interior works, landscaping
+                        and real estate services including complete turn key construction.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="font-weight-bold mb-3" ><strong>Contact us</strong></h2>
+                    <p>Office:<br>Business Center Racica<br>II Dalmatinska No.3<br>
+                        85320 Tivat , Montenegro
+                    </p> <br>
+                    <p>Show room, warehouse and <br>service:<br>
+                        Donja Lastva, Tivat
+                    </p>
+                    <p  class="animated pulse slower infinite">
+                        <i class="fas fa-mobile-alt blue-text fa-lg"></i>
+                        +382 69 490 717
+                    </p>
+                    <p class="animated pulse slower infinite">
+                        <i class="far fa-envelope blue-text fa-lg"></i>
+                       <a href="mailto:office@integerss.me">office@integerss.me</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <agm-map [latitude]="42.431141" [longitude]="18.698292" [fitBounds]="true">
+                <agm-marker [latitude]="42.431141" [longitude]="18.698362" [agmFitBounds]="true">
+                    <agm-info-window [disableAutoPan]="false" [isOpen]="true">
+                        Poslovni centar Racica
+                    </agm-info-window>
+                </agm-marker>
+                <agm-marker [latitude]="42.446667" [longitude]="18.689057" [agmFitBounds]="true">
+                    <agm-info-window [disableAutoPan]="false" [isOpen]="true">
+                        Show Room Donja Lastva
+                    </agm-info-window>
+                </agm-marker>
+            </agm-map>
+        </div>
+    </div>
+</div>
+<div class="footer-copyright text-center py-3">© 2019 Copyright: Marko S.</div>

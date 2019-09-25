@@ -1,0 +1,59 @@
+<div class="container">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo darken-3 fixed-top" [containerInside]="false">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><img src="../../assets/images/Logo.png" alt="" id="logo"></mdb-navbar-brand>
+  
+    <!-- Collapsible content -->
+    <links>
+  
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link waves-light" mdbWavesEffect routerLink="/home" >
+            Home
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link waves-light" mdbWavesEffect routerLink="/investing-in-montenegro" > 
+            Investing in Montenegro
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link waves-light" mdbWavesEffect routerLink="/real-estate" >
+              Real Estate
+            </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link waves-light" mdbWavesEffect routerLink="/systems"  >
+              Systems
+            </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link waves-light" mdbWavesEffect routerLink="/references" >
+              References
+            </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link waves-light" mdbWavesEffect routerLink="/contact" >
+              Contact
+            </a>
+        </li>
+  
+      </ul>
+      <!-- Links -->
+    </links>
+    <!-- Collapsible content -->
+  
+</mdb-navbar>
+</div>
+
+<div class="view intro-2 " ></div>
+
+<div class="container" id="kontejner">
+    <div class="pozadina"></div>
+    <app-carousel></app-carousel>
+    <router-outlet></router-outlet>
+    <app-contact></app-contact>
+</div>
+ 

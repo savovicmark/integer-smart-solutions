@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <h3 class="font-weight-bold mb-3"><strong>{{title}}</strong></h3>
+<div class="card-deck">
+
+    <!-- Card -->
+    <div class="card mb-4" *ngFor="let card of cards">
+  
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" [src]="card.image" alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+  
+      <!--Card content-->
+      <div class="card-body">
+  
+        <!--Title-->
+        <h4 class="card-title">{{card.title}}</h4>
+        <!--Text-->
+        <p class="card-text" *ngFor="let paragraph of card.paragraphs"> <i class="fas fa-check blue-text"></i>
+           {{paragraph}}
+        </p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+  
+      </div>
+  
+    </div>
+  </div>
+  <button (click)="navigate()" type="button" class="btn btn-outline-info btn-rounded btn-lg">Read more</button>
+</div>

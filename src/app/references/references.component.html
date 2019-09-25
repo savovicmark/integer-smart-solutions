@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row" *ngFor="let reference of references">
+        <div class="col-lg-6">
+            <h3 class="font-weight-bold mb-3" ><strong>{{reference.title | uppercase}}</strong></h3>
+            <p class="card-text" *ngFor="let paragraph of reference.paragraphs">
+                <i class="fas fa-check blue-text"></i>
+                {{paragraph}}
+            </p>
+            
+        </div>
+        <div class="col-lg-6 center">
+            <app-carousel-normal *ngIf="reference.images" [images]="reference.images"></app-carousel-normal>
+            <img *ngIf="reference.image" [src]="reference.image" alt="" class="d-block w-100">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="container-fluid">
+    <div class="row" id="vraper">
+        <div class="col-lg-3">
+            <div>
+                <i class="fas fa-map-marker-alt fa-4x blue-text"></i>
+                <h5 class="font-weight-bold mb-3" ><strong>ADDRESS (OFFICE) </strong></h5>
+                <p>Business Center Racica</p>
+                <p>II Dalmatinska No.3</p>
+                <p>85320 Tivat , Montenegro</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div>
+                <i class="fas fa-map-marker-alt fa-4x blue-text"></i>
+                <h5 class="font-weight-bold mb-3" >
+                    <strong>ADDRESS (SHOW ROOM, WAREHOUSE AND SERVICE) </strong>
+                </h5>
+                <p>Donja Lastva, Tivat</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div>
+                <i class="fas fa-mobile-alt blue-text fa-4x"></i>
+                <h5 class="font-weight-bold mb-3" ><strong>PHONE</strong></h5>
+                <p>+382 69 490 717</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div>
+                <i class="far fa-envelope blue-text fa-4x"></i>
+                <h5 class="font-weight-bold mb-3" ><strong>E-MAIL</strong></h5>
+                <p><a href="mailto:office@integerss.me">office@integerss.me</a> </p>
+            </div>
+        </div>
+    </div>
+    <agm-map [latitude]="42.431141" [longitude]="18.698292" [fitBounds]="true">
+            <agm-marker [latitude]="42.431141" [longitude]="18.698362" [agmFitBounds]="true">
+                <agm-info-window [disableAutoPan]="false" [isOpen]="true">
+                    Poslovni centar Racica
+                </agm-info-window>
+            </agm-marker>
+            <agm-marker [latitude]="42.446667" [longitude]="18.689057" [agmFitBounds]="true">
+                <agm-info-window [disableAutoPan]="false" [isOpen]="true">
+                    Show Room Donja Lastva
+                </agm-info-window>
+            </agm-marker>
+    </agm-map>
+</div>
