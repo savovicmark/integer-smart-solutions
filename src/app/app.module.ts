@@ -8,7 +8,6 @@ import { AppComponent } from './app-root/app.component';
 import { AppCarouselComponent } from './app-carousel/app-carousel.component';
 import { AppSectionComponent } from './app-section/app-section.component';
 import { AppCardComponent } from './app-card/app-card.component';
-import { AppFourcardsComponent } from './app-fourcards/app-fourcards.component';
 import { AppSectiontwoComponent } from './app-sectiontwo/app-sectiontwo.component';
 import { AppContactComponent } from './app-contact/app-contact.component';
 import { SystemsComponent } from './systems/systems.component';
@@ -26,7 +25,6 @@ import { HomeComponent } from './home/home.component';
     AppCarouselComponent,
     AppSectionComponent,
     AppCardComponent,
-    AppFourcardsComponent,
     AppSectiontwoComponent,
     AppContactComponent,
     SystemsComponent,

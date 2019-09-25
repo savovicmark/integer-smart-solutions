@@ -15,7 +15,7 @@ export const homeCardsOne: Card[] = [
       ]
     },{
       title: 'Platinum Club',
-      image: '../../assets/images/PMYC.jpg',
+      image: '../../assets/images/platinum.jpg',
       paragraphs: [
         'Smart KNX light control system',
         'LED light dimmers'
